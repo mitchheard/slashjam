@@ -1,7 +1,11 @@
 Flask==0.10.1
+Flask-Slack==0.1.5
 Jinja2==2.8
 MarkupSafe==0.23
 Werkzeug==0.11.3
 gunicorn==19.4.5
 itsdangerous==0.24
+requests==2.9.1
+six==1.10.0
+spotipy==2.3.7
 wsgiref==0.1.2
