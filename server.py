@@ -27,7 +27,7 @@ def grab_track(**kwargs):
     track_id = check_url.path.split('/')[2]
     if check_url.netloc == 'open.spotify.com':
         scope = 'playlist-modify-public'
-        token = util.prompt_for_user_token('mitchheard', scope, client_id, client_secret, redirect_url)
+        token = util.prompt_for_user_token(spotify_user, scope, client_id, client_secret, redirect_url)
 
         if token:
             sp = spotipy.Spotify(auth=token)
